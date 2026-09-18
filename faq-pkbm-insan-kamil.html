@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<meta content="#A9790D" name="theme-color"/>
+<title>Pertanyaan Umum (FAQ) — PKBM Insan Kamil</title>
+<meta name="description" content="Jawaban lengkap seputar pendaftaran, ijazah Paket A/B/C, biaya, jadwal, dan legalitas PKBM Insan Kamil — lembaga pendidikan kesetaraan resmi di Garut."/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="anonymous" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600&amp;family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500&amp;display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --paper:#FFFFFF; --paper-2:#F7F8F6; --surface:#FFFFFF;
+  --ink:#1A1D24; --ink-2:#545B6B; --ink-3:#8C93A3;
+  --hijau:#A9790D; --hijau-2:#C79417; --hijau-pucat:#FBF1DC;
+  --emas:#FFC93C; --emas-pucat:#FFF7E3;
+  --garis:#E7E9EF; --garis-2:#D9DCE4; --putih:#FFFFFF;
+
+  --ck-hijau-gelap:#FFE29A; --ck-hijau-terang:#E3A63A; --ck-emas-terang:#F2CF8C;
+
+  --font-judul:'Plus Jakarta Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  --font-teks:'DM Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+
+  --r-lg:12px; --r:8px; --r-full:999px;
+  --lebar:860px; --gutter:clamp(22px,5vw,48px);
+
+  --ck-shadow:0 1px 2px rgba(15,25,18,.04), 0 1px 1px rgba(15,25,18,.03);
+  --ck-shadow-hover:0 10px 24px rgba(15,25,18,.08);
+  --ck-ease:cubic-bezier(.4,0,.2,1); --ck-spring:cubic-bezier(.22,1,.36,1);
+}
+*,*::before,*::after{ box-sizing:border-box; }
+html{ scroll-behavior:smooth; -webkit-text-size-adjust:100%; }
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:var(--font-teks); font-size:16.5px; line-height:1.75; font-weight:400;
+  -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+}
+a{ color:inherit; text-decoration:none; }
+h1,h2{ font-family:var(--font-judul); color:var(--hijau); line-height:1.2; margin:0 0 .5em; font-weight:800; letter-spacing:-.026em; }
+h1{ font-size:clamp(28px,4.2vw,42px); max-width:20ch; }
+h2{ font-size:19px; letter-spacing:-.014em; margin-bottom:4px; }
+p{ margin:0 0 1em; }
+ul{ margin:0; padding:0; list-style:none; }
+.wrap{ max-width:var(--lebar); margin:0 auto; padding-left:var(--gutter); padding-right:var(--gutter); }
+:focus-visible{ outline:2px solid var(--hijau); outline-offset:3px; border-radius:2px; }
+
+/* ---------- Header ringkas ---------- */
+.top{
+  border-bottom:1px solid var(--garis); position:sticky; top:0; z-index:10;
+  background:rgba(255,255,255,.92); -webkit-backdrop-filter:blur(8px); backdrop-filter:blur(8px);
+}
+.top .wrap{ display:flex; align-items:center; justify-content:space-between; min-height:64px; gap:16px; }
+.top-brand{ display:flex; align-items:center; gap:10px; font-family:var(--font-judul); font-weight:800; font-size:15.5px; color:var(--ink); }
+.top-brand .titik{ width:8px; height:8px; border-radius:50%; background:var(--emas); flex:0 0 auto; }
+.top-kembali{
+  display:inline-flex; align-items:center; gap:7px; font-size:13.5px; font-weight:600; color:var(--ink-2);
+  transition:color .2s var(--ck-ease);
+}
+.top-kembali:hover{ color:var(--hijau); }
+.top-kembali svg{ width:15px; height:15px; stroke:currentColor; fill:none; stroke-width:2.2; }
+
+/* ---------- Intro ---------- */
+.intro{ padding:clamp(48px,7vw,84px) 0 clamp(28px,4vw,40px); }
+.eyebrow{
+  display:flex; align-items:center; gap:10px; font-size:11px; font-weight:700;
+  letter-spacing:.2em; text-transform:uppercase; color:var(--ink-3); margin:0 0 16px;
+}
+.eyebrow::before{ content:""; width:24px; height:1px; background:var(--emas); flex:0 0 auto; }
+.intro .lede{ color:var(--ink-2); font-size:17px; line-height:1.7; max-width:56ch; margin-bottom:0; }
+
+/* ---------- Pencarian ---------- */
+.cari{ margin:28px 0 8px; position:relative; max-width:440px; }
+.cari input{
+  width:100%; padding:13px 16px 13px 44px; border-radius:var(--r-full);
+  border:1.5px solid var(--garis-2); background:var(--surface); color:var(--ink);
+  font-family:var(--font-teks); font-size:14.5px; transition:border-color .2s var(--ck-ease), box-shadow .2s var(--ck-ease);
+}
+.cari input:focus{ outline:none; border-color:var(--hijau); box-shadow:0 0 0 3px var(--hijau-pucat); }
+.cari svg{
+  position:absolute; left:16px; top:50%; transform:translateY(-50%);
+  width:17px; height:17px; stroke:var(--ink-3); fill:none; stroke-width:2.1; pointer-events:none;
+}
+.cari-kosong{ display:none; padding:36px 0; color:var(--ink-2); font-size:14.5px; }
+.cari-kosong.tampil{ display:block; }
+
+/* ---------- Kategori & daftar ---------- */
+.kategori{ padding:20px 0 clamp(28px,4vw,44px); border-top:1px solid var(--garis); }
+.kategori:first-of-type{ border-top:0; }
+.kategori-head{ display:flex; align-items:baseline; gap:10px; margin-bottom:6px; }
+.kategori-jumlah{ font-size:12.5px; color:var(--ink-3); font-weight:500; }
+
+.faq-list{ display:flex; flex-direction:column; }
+.faq-item{ border-bottom:1px solid var(--garis); padding:20px 0; }
+.faq-item:first-child{ border-top:1px solid var(--garis); margin-top:14px; }
+.faq-item[hidden]{ display:none; }
+.faq-question{
+  display:flex; align-items:center; justify-content:space-between; gap:20px;
+  cursor:pointer; list-style:none;
+  font-family:var(--font-judul); font-weight:600; font-size:16px; color:var(--ink);
+  transition:color .2s var(--ck-ease);
+}
+.faq-question::-webkit-details-marker{ display:none; }
+.faq-question > span:first-child{ max-width:58ch; }
+.faq-item:hover .faq-question{ color:var(--hijau); }
+.faq-icon{
+  position:relative; flex:0 0 auto; width:26px; height:26px; border-radius:50%;
+  border:1.5px solid var(--garis-2);
+  transition:transform .28s var(--ck-ease), box-shadow .28s var(--ck-ease), border-color .28s var(--ck-ease), background-color .28s var(--ck-ease);
+}
+.faq-icon::before,.faq-icon::after{
+  content:""; position:absolute; top:50%; left:50%; background:var(--hijau);
+  transition:transform .25s var(--ck-ease), background-color .25s var(--ck-ease);
+}
+.faq-icon::before{ width:9px; height:1.5px; transform:translate(-50%,-50%); }
+.faq-icon::after{ width:1.5px; height:9px; transform:translate(-50%,-50%); }
+.faq-item:hover .faq-icon{ border-color:var(--hijau); }
+.faq-item[open] .faq-icon{ background:var(--hijau); border-color:var(--hijau); }
+.faq-item[open] .faq-icon::before,.faq-item[open] .faq-icon::after{ background:var(--putih); }
+.faq-item[open] .faq-icon::after{ transform:translate(-50%,-50%) rotate(90deg) scaleY(0); }
+.faq-answer{ padding:12px 48px 0 0; max-width:66ch; animation:faqMasuk .25s var(--ck-ease); }
+.faq-answer p{ margin:0; color:var(--ink-2); font-size:15px; line-height:1.75; }
+@keyframes faqMasuk{ from{ opacity:0; transform:translateY(-2px); } to{ opacity:1; transform:none; } }
+mark{ background:var(--emas-pucat); color:var(--ink); border-radius:2px; padding:0 1px; }
+
+/* ---------- CTA penutup ---------- */
+.cta{
+  margin-top:8px; padding:clamp(28px,4.5vw,40px); border-radius:16px;
+  background:linear-gradient(150deg,var(--ck-emas-terang) 0%,var(--emas) 55%,var(--ck-hijau-gelap) 100%);
+  display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:20px;
+}
+.cta h2{ color:#2A1F0C; margin-bottom:4px; }
+.cta p{ color:rgba(42,31,12,.78); margin:0; font-size:14.5px; max-width:40ch; }
+.cta-aksi{ display:flex; gap:12px; flex-wrap:wrap; }
+.btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:9px;
+  padding:14px 26px; border-radius:var(--r-full); font-weight:700; font-size:14px;
+  border:1px solid transparent; cursor:pointer; white-space:nowrap;
+  transition:transform .22s var(--ck-ease), box-shadow .22s var(--ck-ease), background-color .25s var(--ck-ease), opacity .25s var(--ck-ease);
+}
+.btn-utama{ background:var(--hijau); color:var(--putih); }
+.btn-utama:hover{ background:#8C640B; transform:translateY(-2px); box-shadow:0 10px 22px rgba(152,108,27,.28); }
+.btn-terang{ background:var(--putih); color:var(--hijau); }
+.btn-terang:hover{ opacity:.88; transform:translateY(-2px); }
+
+/* ---------- Footer ---------- */
+footer{ border-top:1px solid var(--garis); padding:26px 0 40px; margin-top:48px; }
+footer .wrap{ display:flex; flex-wrap:wrap; gap:10px 24px; align-items:center; justify-content:space-between; }
+footer p{ margin:0; font-size:13px; color:var(--ink-3); }
+footer a{ font-size:13px; color:var(--ink-2); transition:color .2s var(--ck-ease); }
+footer a:hover{ color:var(--hijau); }
+
+@media (max-width:640px){
+  .faq-question{ font-size:15px; gap:14px; }
+  .faq-answer{ padding-right:0; }
+  .cta{ flex-direction:column; align-items:flex-start; }
+}
+@media (prefers-reduced-motion:reduce){
+  html{ scroll-behavior:auto; }
+  .faq-answer{ animation:none; }
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <span class="top-brand"><span class="titik"></span>PKBM Insan Kamil</span>
+    <!-- Ganti href di bawah ini dengan alamat beranda situs jika berbeda -->
+    <a class="top-kembali" href="https://www.pkbminsankamil.sch.id/">
+      <svg viewbox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+      Kembali ke Beranda
+    </a>
+  </div>
+</header>
+
+<main>
+  <section class="intro">
+    <div class="wrap">
+      <p class="eyebrow">Pusat Bantuan</p>
+      <h1>Pertanyaan yang Sering Diajukan</h1>
+      <p class="lede">Kumpulan jawaban seputar pendaftaran, ijazah kesetaraan, biaya, jadwal belajar, hingga legalitas PKBM Insan Kamil. Tidak menemukan jawabannya? Hubungi tim kami langsung di bagian bawah halaman ini.</p>
+
+      <div class="cari">
+        <svg viewbox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <input id="faq-cari" type="text" placeholder="Cari pertanyaan, mis. &quot;biaya&quot; atau &quot;ijazah&quot;" aria-label="Cari pertanyaan"/>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap" id="faq-wadah">
+
+    <!-- ==================== KATEGORI 1 ==================== -->
+    <div class="kategori" data-kategori>
+      <div class="kategori-head">
+        <h2>Pendaftaran &amp; Persyaratan</h2>
+      </div>
+      <div class="faq-list">
+
+        <details class="faq-item" data-faq>
+          <summary class="faq-question"><span data-pertanyaan>Siapa saja yang boleh mendaftar sebagai warga belajar?</span><span aria-hidden="true" class="faq-icon"></span></summary>
+          <div class="faq-answer"><p data-jawaban>Layanan kami terbuka bagi anak dan remaja putus sekolah, dewasa maupun lansia yang belum melek aksara, ibu rumah tangga, serta pekerja yang ingin melanjutkan pendidikan. Tidak ada batas usia maksimal, dan tidak ada kata terlambat untuk kembali belajar.</p></div>
+        </details>
+
+        <details class="faq-item" data-faq>
+          <summary class="faq-question"><span data-pertanyaan>Berkas apa saja yang perlu disiapkan saat mendaftar?</span><span aria-hidden="true" class="faq-icon"></span></summary>
+          <div class="faq-answer"><p data-jawaban>Calon warga belajar cukup menyiapkan salinan Kartu Keluarga, KTP atau akta kelahiran, ijazah/rapor terakhir (bila ada), dan pas foto terbaru. Tim kami membantu proses administrasi lanjutan setelah berkas diterima.</p></div>
+        </details>
+
+        <details class="faq-item" data-faq>
+          <summary class="faq-question"><span data-pertanyaan>Bagaimana cara memulai pendaftaran?</span><span aria-hidden="true" class="faq-icon"></span></summary>
+          <div class="faq-answer"><p data-jawaban>Anda dapat menghubungi kami melalui WhatsApp atau mengisi formulir pendaftaran pada laman SPMB di situs ini. Tim kami akan menjelaskan alur pendaftaran, jadwal, dan berkas yang diperlukan secara lengkap.</p></div>
+        </details>
+
+        <details class="faq-item" data-faq>
+          <summary class="faq-question"><span data-pertanyaan>Apakah pendaftaran dibuka sepanjang tahun atau ada periode tertentu?</span><span aria-hidden="true" class="faq-icon"></span></summary>
+          <div class="faq-answer"><p data-jawaban>Pendaftaran warga belajar baru pada umumnya dibuka menjelang awal semester atau tahun ajaran, namun konsultasi dan pendataan awal dapat dilakukan sewaktu-waktu. Hubungi tim kami untuk mengetahui periode yang sedang berjalan.</p></div>
+        </details>
+
+        <details class="faq-item" data-faq>
+          <summary class="faq-question"><span data-pertanyaan>Apakah ada batas usia untuk mengikuti program kesetaraan?</span><span aria-hidden="true" class="faq-icon"></span></summary>
+          <div class="faq-answer"><p data-jawaban>Tidak ada batas usia. PKBM Insan Kamil menjadi rumah belajar bagi setiap warga, dari anak putus sekolah hingga lansia yang ingin kembali menempuh pendidikan.</p></div>
+        </details>
+
+      </div>
+    </div>
+
+    <!-- ==================== KATEGORI 2 ==================== -->
+    <div class="kategori" data-kategori>
+      <div class="kategori-head">
+        <h2>Program &amp; Ijazah</h2>
+      </div>
+      <div class="faq-list">
+
+        <details class="faq-item" data-faq>
+          <summary class="faq-question"><span data-pertanyaan>Apakah ijazah Paket A, Paket B, dan Paket C diakui secara resmi?</span><span aria-hidden="true" class="faq-icon"></span></summary>
+          <div class="faq-answer"><p data-jawaban>Ya, sepenuhnya diakui. Ijazah Paket A (setara SD), Paket B (setara SMP), dan Paket C (setara SMA) diterbitkan resmi oleh pemerintah melalui jalur pendidikan kesetaraan, dan kedudukan hukumnya sama dengan ijazah sekolah formal.</p></div>
+        </details>
+
+        <details class="faq-item" data-faq>
+          <summary class="faq-question"><span data-pertanyaan>Apa perbedaan Program Paket A, B, dan C?</span><span aria-hidden="true" class="faq-icon"></span></summary>
+          <div class="faq-answer"><p data-jawaban>Paket A setara jenjang SD/MI, Paket B setara SMP/MTs, dan Paket C setara SMA/MA. Warga belajar dapat mendaftar sesuai jenjang pendidikan terakhir yang pernah ditempuh, termasuk bagi yang belum pernah sekolah sama sekali.</p></div>
+        </details>
+
+        <details class="faq-item" data-faq>
+          <summary class="faq-question"><span data-pertanyaan>Bisakah ijazah dari PKBM dipakai untuk melamar kerja atau melanjutkan kuliah?</span><span aria-hidden="true" class="faq-icon"></span></summary>
+          <div class="faq-answer"><p data-jawaban>Bisa. Ijazah Paket A, B, dan C dapat dipakai melamar kerja, mendaftar CPNS, maupun melanjutkan pendidikan ke jenjang berikutnya, termasuk mendaftar kuliah di perguruan tinggi.</p></div>
+        </details>
+
+        <details class="faq-item" data-faq>
+          <summary class="faq-question"><span data-pertanyaan>Apakah tersedia program keaksaraan bagi yang belum bisa membaca dan menulis?</span><span aria-hidden="true" class="faq-icon"></span></summary>
+          <div class="faq-answer"><p data-jawaban>Ya. Kami menyelenggarakan program keaksaraan dasar bagi warga yang belum melek huruf, sebagai jembatan sebelum melanjutkan ke program kesetaraan Paket A, B, atau C.</p></div>
+        </details>
+
+        <details class="faq-item" data-faq>
+          <summary class="faq-question"><span data-pertanyaan>Selain kesetaraan, program apa lagi yang tersedia?</span><span aria-hidden="true" class="faq-icon"></span></summary>
+          <div class="faq-answer"><p data-jawaban>PKBM Insan Kamil juga menghadirkan pelatihan vokasi dan kewirausahaan, serta pembinaan keislaman termasuk tahsin dan tahfizh, yang terintegrasi dengan kegiatan belajar sehari-hari.</p></div>
+        </details>
+
+      </div>
+    </div>
+
+    <!-- ==================== KATEGORI 3 ==================== -->
+    <div class="kategori" data-kategori>
+      <div class="kategori-head">
+        <h2>Biaya &amp; Bantuan</h2>
+      </div>
+      <div class="faq-list">
+
+        <details class="faq-item" data-faq>
+          <summary class="faq-question"><span data-pertanyaan>Apakah ada biaya untuk mengikuti program di PKBM Insan Kamil?</span><span aria-hidden="true" class="faq-icon"></span></summary>
+          <div class="faq-answer"><p data-jawaban>Sebagian besar program kesetaraan diselenggarakan dengan biaya terjangkau, dan sebagian mendapat dukungan bantuan pemerintah. Rincian biaya serta skema keringanan dapat dikonsultasikan langsung dengan tim pendaftaran kami.</p></div>
+        </details>
+
+        <details class="faq-item" data-faq>
+          <summary class="faq-question"><span data-pertanyaan>Apakah tersedia bantuan atau keringanan biaya bagi warga tidak mampu?</span><span aria-hidden="true" class="faq-icon"></span></summary>
+          <div class="faq-answer"><p data-jawaban>Kami berupaya membuka kembali jalan pendidikan bagi siapa pun yang sempat tertunda. Bagi warga belajar dengan keterbatasan biaya, silakan sampaikan kondisinya saat konsultasi pendaftaran agar dapat dicarikan skema yang sesuai.</p></div>
+        </details>
+
+      </div>
+    </div>
+
+    <!-- ==================== KATEGORI 4 ==================== -->
+    <div class="kategori" data-kategori>
+      <div class="kategori-head">
+        <h2>Jadwal &amp; Metode Belajar</h2>
+      </div>
+      <div class="faq-list">
+
+        <details class="faq-item" data-faq>
+          <summary class="faq-question"><span data-pertanyaan>Bagaimana jadwal belajarnya — apakah bisa disesuaikan dengan waktu bekerja?</span><span aria-hidden="true" class="faq-icon"></span></summary>
+          <div class="faq-answer"><p data-jawaban>Ya. Jadwal tatap muka dirancang fleksibel, umumnya pada sore atau akhir pekan, sehingga warga belajar yang bekerja maupun mengurus rumah tangga tetap dapat mengikuti pembelajaran secara rutin.</p></div>
+        </details>
+
+        <details class="faq-item" data-faq>
+          <summary class="faq-question"><span data-pertanyaan>Apakah pembelajaran dilakukan secara tatap muka, daring, atau campuran?</span><span aria-hidden="true" class="faq-icon"></span></summary>
+          <div class="faq-answer"><p data-jawaban>Pembelajaran utama dilaksanakan secara tatap muka di lokasi kegiatan belajar, dengan pendampingan tutor secara langsung agar warga belajar lebih mudah memahami materi.</p></div>
+        </details>
+
+        <details class="faq-item" data-faq>
+          <summary class="faq-question"><span data-pertanyaan>Apakah ada ujian, dan bagaimana pelaksanaannya?</span><span aria-hidden="true" class="faq-icon"></span></summary>
+          <div class="faq-answer"><p data-jawaban>Warga belajar mengikuti evaluasi belajar berjenjang serta Ujian Kesetaraan yang diselenggarakan sesuai ketentuan pemerintah, sebagai syarat penerbitan ijazah resmi.</p></div>
+        </details>
+
+      </div>
+    </div>
+
+    <!-- ==================== KATEGORI 5 ==================== -->
+    <div class="kategori" data-kategori>
+      <div class="kategori-head">
+        <h2>Legalitas &amp; Lokasi</h2>
+      </div>
+      <div class="faq-list">
+
+        <details class="faq-item" data-faq>
+          <summary class="faq-question"><span data-pertanyaan>Apakah PKBM Insan Kamil terdaftar resmi dan diawasi pemerintah?</span><span aria-hidden="true" class="faq-icon"></span></summary>
+          <div class="faq-answer"><p data-jawaban>Ya. PKBM Insan Kamil adalah lembaga pendidikan nonformal yang terdaftar dan diawasi oleh Dinas Pendidikan, dengan izin operasional resmi sebagai penyelenggara pendidikan kesetaraan.</p></div>
+        </details>
+
+        <details class="faq-item" data-faq>
+          <summary class="faq-question"><span data-pertanyaan>Di mana lokasi kegiatan belajar dilaksanakan?</span><span aria-hidden="true" class="faq-icon"></span></summary>
+          <div class="faq-answer"><p data-jawaban>Kegiatan belajar berpusat di wilayah Sukamentri, Garut Kota. Alamat lengkap dan denah lokasi dapat dilihat pada bagian peta di halaman kontak situs ini.</p></div>
+        </details>
+
+      </div>
+    </div>
+
+    <!-- ==================== KATEGORI 6 ==================== -->
+    <div class="kategori" data-kategori>
+      <div class="kategori-head">
+        <h2>Lainnya</h2>
+      </div>
+      <div class="faq-list">
+
+        <details class="faq-item" data-faq>
+          <summary class="faq-question"><span data-pertanyaan>Bagaimana cara menghubungi tim PKBM Insan Kamil?</span><span aria-hidden="true" class="faq-icon"></span></summary>
+          <div class="faq-answer"><p data-jawaban>Anda dapat menghubungi kami melalui WhatsApp, datang langsung ke lokasi kegiatan belajar, atau mengisi formulir kontak pada situs ini. Tim kami akan merespons dengan penuh perhatian dan profesionalisme.</p></div>
+        </details>
+
+        <details class="faq-item" data-faq>
+          <summary class="faq-question"><span data-pertanyaan>Bisakah keluarga atau wali berkonsultasi sebelum mendaftar?</span><span aria-hidden="true" class="faq-icon"></span></summary>
+          <div class="faq-answer"><p data-jawaban>Tentu. Keluarga atau wali sangat disambut untuk berkonsultasi langsung mengenai program yang paling sesuai dengan kebutuhan dan kondisi calon warga belajar, baik secara tatap muka maupun via WhatsApp.</p></div>
+        </details>
+
+      </div>
+    </div>
+
+    <p class="cari-kosong" id="cari-kosong">Tidak ada pertanyaan yang cocok dengan pencarian Anda. Coba kata kunci lain, atau hubungi kami langsung di bawah ini.</p>
+
+    <!-- ==================== CTA PENUTUP ==================== -->
+    <div class="cta">
+      <div>
+        <h2>Masih ada yang ingin ditanyakan?</h2>
+        <p>Tim kami siap membantu menjelaskan program, jadwal, dan proses pendaftaran secara langsung.</p>
+      </div>
+      <div class="cta-aksi">
+        <!-- Ganti nomor 62812xxxxxxxx di bawah ini dengan nomor WhatsApp resmi -->
+        <a class="btn btn-utama" href="https://wa.me/62812xxxxxxxx?text=Assalamu%27alaikum%2C%20saya%20ingin%20bertanya%20seputar%20PKBM%20Insan%20Kamil" rel="noopener" target="_blank">Tanya via WhatsApp</a>
+        <a class="btn btn-terang" href="https://www.pkbminsankamil.sch.id/p/spmb.html">Daftar Sekarang</a>
+      </div>
+    </div>
+
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>&copy; <span id="tahun-berjalan">2026</span> PKBM Insan Kamil. Seluruh hak cipta dilindungi.</p>
+    <a href="https://www.pkbminsankamil.sch.id/">Kembali ke beranda</a>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var thn = document.getElementById('tahun-berjalan');
+  if (thn) { thn.textContent = new Date().getFullYear(); }
+
+  var kolom = document.getElementById('faq-cari');
+  var kosong = document.getElementById('cari-kosong');
+  var semuaItem = Array.prototype.slice.call(document.querySelectorAll('[data-faq]'));
+  var semuaKategori = Array.prototype.slice.call(document.querySelectorAll('[data-kategori]'));
+
+  function bersihkanSorotan(el){
+    el.querySelectorAll('mark').forEach(function(m){
+      m.replaceWith(document.createTextNode(m.textContent));
+    });
+    el.normalize();
+  }
+
+  function sorot(el, kataKunci){
+    bersihkanSorotan(el);
+    if (!kataKunci) return;
+    var walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null);
+    var node, target = [];
+    while ((node = walker.nextNode())) { target.push(node); }
+    target.forEach(function(t){
+      var teks = t.nodeValue, idx = teks.toLowerCase().indexOf(kataKunci);
+      if (idx === -1) return;
+      var bungkus = document.createElement('span');
+      bungkus.innerHTML = teks.slice(0, idx) + '<mark>' + teks.slice(idx, idx + kataKunci.length) + '</mark>' + teks.slice(idx + kataKunci.length);
+      t.replaceWith(bungkus);
+    });
+  }
+
+  function saring(){
+    var kataKunci = kolom.value.trim().toLowerCase();
+    var adaHasil = false;
+
+    semuaItem.forEach(function(item){
+      var pertanyaan = item.querySelector('[data-pertanyaan]');
+      var jawaban = item.querySelector('[data-jawaban]');
+      var teks = (pertanyaan.textContent + ' ' + jawaban.textContent).toLowerCase();
+      var cocok = !kataKunci || teks.indexOf(kataKunci) !== -1;
+
+      item.hidden = !cocok;
+      if (cocok) {
+        adaHasil = true;
+        if (kataKunci) { item.setAttribute('open', ''); } else { item.removeAttribute('open'); }
+        sorot(pertanyaan, kataKunci);
+        sorot(jawaban, kataKunci);
+      }
+    });
+
+    semuaKategori.forEach(function(kat){
+      var terlihat = kat.querySelectorAll('[data-faq]:not([hidden])').length;
+      kat.hidden = terlihat === 0;
+    });
+
+    kosong.classList.toggle('tampil', !adaHasil);
+  }
+
+  if (kolom) {
+    kolom.addEventListener('input', saring);
+  }
+})();
+</script>
+</body>
+</html>
